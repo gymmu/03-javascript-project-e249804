@@ -21,7 +21,7 @@ export function aufgabe01(args) {
 
 
 export function aufgabe02(args) {
-  // erstellt die Funktion 
+  // erstellt die Funktion für alle aufgaben
   const input = args
   const result = []
 
@@ -43,17 +43,17 @@ export function aufgabe03(args) {
   const result = []
   let count= 0
 
-  for (let i = 0 ; i < input.length; i++) {
+  for (let i = 0; i < input.length; i++) {
     const currentElement =input[i]
 
 if (currentElement === 'e') {
-  count=count + 1
+  count = count + 1
 } 
 if (currentElement === 'E') {
   count = count + 1
 }
 }
-  return count ("")
+  return count 
 }
 
 
@@ -105,6 +105,18 @@ export function aufgabe07(args) {
 }
 
 
+
+export function aufgabe08 (args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
+
+
+
+
+
 export function aufgabe09(args) {
 const input = args
 const result = []
@@ -124,6 +136,18 @@ if ( len === 6 ) {
   return false
   }
 }
+
+export function aufgabe10 (args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
+
+
+
+
+
 
 
 export function aufgabe11 (args) {
@@ -161,6 +185,20 @@ if (currentElement === "e") {
 }
 
 export function aufgabe13 (args) {
+  // Suche die position des letzen e
+  const input = args
+  const result = []
+  for (let i = 1; i < input.length; i++) {
+
+
+  }
+  
+  return result.join("")
+}
+
+
+
+export function aufgabe14 (args) {
   const input = args
   const result = []
   
@@ -168,9 +206,12 @@ export function aufgabe13 (args) {
 }
 
 
-
-
-
+export function aufgabe15 (args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
 
 
 
