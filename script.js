@@ -175,12 +175,23 @@ export function aufgabe10 (args) {
 export function aufgabe11 (args) {
   const input = args
   const result = []
+  let ascii = null
+
+  if (input.length>1) {// ist funktionswächter
+    return null
+  }
+
+  for (let i = 0;i < input.length; i++) {
+    const currentElement = input[i]
+    ascii = currentElement.charCodeAt (0)
+    return ascii
+  }
   
-  return result.join("")
+  return null
 }
 
 
-export function aufgabe12 (args) {
+export function aufgabe12(args) {
   const input = args
   
   for (let i = 0; i < input.length; i++) {
@@ -211,9 +222,20 @@ export function aufgabe13 (args) {
 
 export function aufgabe14 (args) {
   const input = args
-  const result = []
-  
-  return result.join("")
+  const result = 0
+  let count = 0
+
+  for (let i = 0;i < input.length;i++) {
+    const currentElement = input[i]
+
+    if (currentElement === "e") {
+      count++
+    if (count === 3) {
+        return i
+      }
+    }
+  }
+  return -1
 }
 
 
@@ -245,4 +267,3 @@ export function aufgabe18(args) {
   
   return result.join("")
 }
-
