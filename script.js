@@ -112,12 +112,15 @@ export function aufgabe08 (args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    if (currentElement=== "e") {
+    if (currentElement === "e") {
       result.push (3)
-      
+
     }
+    else {
+      result.push (currentElement)
+    }
+  
   }
-   
   return result.join("")
 }
 
@@ -132,18 +135,17 @@ const result = []
 let len = 0
 
 for (let i = 0; i < input.length; i++) {
-const currentElement = input[i]
-
-
-
+const currentElement = input[i] 
+len = len +1 
+}
+if (len === 6) {
+  return true }
+  else {return false}
 }
 
-if ( len === 6 ) {
-  return true 
-} else {
-  return false
-  }
-}
+
+
+
 // teste ob eine Eingabe ein korrekter RGB Hexcode ist.
 export function aufgabe10 (args) {
   const input = args
@@ -171,23 +173,12 @@ export function aufgabe10 (args) {
 
 
 export function aufgabe11 (args) {
-const input = args
-let ascii = null
-
-if (input.length > 1 ) { // funktionswächter//
-
-  return null 
+  const input = args
+  const result = []
+  
+  return result.join("")
 }
 
-
-
-for (let i = 0;1 < input.length; i++) {
-const currentElement = input[i]
-ascii = currentElement.charCodeAt(0)
-return ascii
-}
-return null
-}
 
 export function aufgabe12 (args) {
   const input = args
@@ -248,7 +239,10 @@ export function aufgabe17 (args) {
   return result.join("")
 }
 
-
-
-
+export function aufgabe18(args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
 
