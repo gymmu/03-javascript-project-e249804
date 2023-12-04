@@ -267,3 +267,9 @@ export function aufgabe18(args) {
   
   return result.join("")
 }
+
+export function bubbleSort (args) {
+  const list = args.split ("")
+  
+  return result.join("")
+}
