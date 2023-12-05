@@ -113,6 +113,7 @@ export function aufgabe08 (args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
+    // e's sollen ersetzt werden
     if (currentElement === "e") {
       result.push (3)
 
@@ -197,7 +198,7 @@ export function aufgabe12(args) {
   
   for (let i = 0; i < input.length; i++) {
 const currentElement = input[i]
-
+// sucht position des elements e
 if (currentElement === "e") {
   return i
 }
@@ -245,8 +246,17 @@ export function aufgabe14 (args) {
 export function aufgabe15 (args) {
   const input = args
   const result = []
+  for (let i = 0; i< input.length; i++) {
+    const currentElement = input[i]
+
+    if (currentElement === '') {
+      return result.join("")
+    }
+    result.push(currentElement)
+  }
   
   return result.join("")
+
 }
 
 export function aufgabe16 (args) {
@@ -286,8 +296,8 @@ export function aufgabe19(args) {
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i] 
     result.push(currentElement)
+    result.push(currentElement)
   }
-
   return result.join("")
 }
 
@@ -313,6 +323,14 @@ export function aufgabe20(args) {
 // Der sogennante Bubbelsort ist ein Algorhytmus welcher Elemente in einer Liste vertauscht und sortiert//
 export function bubbleSort (args) {
   const list = args.split ("")
+
+  for (let i = 0; i < list.length -1; i++) {
+const currentElement = list[i]
+const nextElement = list[i+1]
+if (currentElemen.charCodeAt(0) > nextElement.charCodeAt(0))
+
+list [i + 1] = list[1] 
+  } 
   
   
   
