@@ -327,12 +327,17 @@ export function bubbleSort (args) {
   for (let i = 0; i < list.length -1; i++) {
 const currentElement = list[i]
 const nextElement = list[i+1]
-if (currentElemen.charCodeAt(0) > nextElement.charCodeAt(0))
+if (currentElemen.charCodeAt(0) > nextElement.charCodeAt(0)){
 
+
+const tmp = list[i + 1]
 list [i + 1] = list[1] 
+list[i] = tmp
+i= -1
   } 
+}
+ const result = list.join("")
+ console.log(result) 
   
-  
-  
-  return result.join("")
+  return result
 }
