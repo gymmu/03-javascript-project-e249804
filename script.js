@@ -20,9 +20,8 @@ export function aufgabe01(args) {
 
 
 
-
+// erstellt die funktion 
 export function aufgabe02(args) {
-  // erstellt die Funktion für alle aufgaben
   const input = args
   const result = []
 
@@ -81,17 +80,33 @@ export function aufgabe05(args) {
   return result.join("")
 }
 
-
+//Funktion teste ob Grossbuchstaben vorkommen
 export function aufgabe06(args) {
   const input = args
-  const result = []
+  
 
   for (let i = 0 ; i < input.length; i++) {
     const currentElement =input[i]
+    const ascii= currentElement.charCodeAt(0)
+  if (48 <= ascii&& ascii<= 57) {
 
+  } else if (65<= ascii&& ascii <= 90) {
+
+  }else if (65<= ascii&&ascii <= 122) {
+
+  }else if (currentElement === " ") {
+
+  }else if (currentElement === " ") {
+
+  }else {
+    return true
+  }
 }
-  return result.join("")
+return false
 }
+
+
+
 
 
 export function aufgabe07(args) {
@@ -321,21 +336,24 @@ export function aufgabe20(args) {
 
 
 // Der sogennante Bubbelsort ist ein Algorhytmus welcher Elemente in einer Liste vertauscht und sortiert//
-export function bubbleSort (args) {
-  const list = args.split ("")
+export function bubbleSort (args){
+  const text = args
+  const list = text.split ("")
 
-  for (let i = 0; i < list.length -1; i++) {
+  for (let i = 0; i < list.length - 1; i++) {
 const currentElement = list[i]
-const nextElement = list[i+1]
+const nextElement = list[i + 1]
 if (currentElemen.charCodeAt(0) > nextElement.charCodeAt(0)){
 
 
 const tmp = list[i + 1]
-list [i + 1] = list[1] 
+list [i + 1] = list[i] 
+
 list[i] = tmp
 i= -1
   } 
 }
+
  const result = list.join("")
  console.log(result) 
   
