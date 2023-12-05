@@ -1,4 +1,5 @@
 export function aufgabe01(args) {
+
   const input = args
   const result = []
 
@@ -30,7 +31,7 @@ export function aufgabe02(args) {
     // Element in einen Grossbuchstaben umwandeln
   const capitalizedElement = currentElement.toUpperCase()
   
-  // Hänge den Grossbuchstaben an das Resultat an...
+  // Hänge den Grossbuchstaben an das Resultat an
   result.push(capitalizedElement)
   
   }
@@ -211,13 +212,15 @@ export function aufgabe13 (args) {
   const input = args
   const result = []
   for (let i = 1; i < input.length; i++) {
-
+ const currentElement = input [i]
+ if (currentElement === 'e') {
+  return i
+ }
 
   }
   
-  return result.join("")
+  return -1
 }
-
 
 
 export function aufgabe14 (args) {
@@ -255,8 +258,16 @@ export function aufgabe16 (args) {
 
 
 export function aufgabe17 (args) {
-  const input = args
-  const result = []
+  const input = args;
+  const result = input.split(",")
+  
+for (let i = 0; i < result.length - 1; i++) { 
+  for (let j = 0; j < result.length - 1 - i; j++) {
+    if (result[j] > result [j + 1],result[j]){
+     
+    }
+  }
+} 
   
   return result.join("")
 }
@@ -268,8 +279,42 @@ export function aufgabe18(args) {
   return result.join("")
 }
 
+export function aufgabe19(args) {
+  // verdopplung der Zeichen //
+  const input = args
+  const result = []
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i] 
+    result.push(currentElement)
+  }
+
+  return result.join("")
+}
+
+export function aufgabe20(args) {
+  const input = args
+  const result = []
+  
+  for(let i =0; i < input.length; i++) {
+    const currentElemet = input[i]
+
+    if (currentElement = input[i])
+    if (currentelement === ".") {
+      return true
+    }
+  }
+  return false
+}
+
+
+
+
+
+// Der sogennante Bubbelsort ist ein Algorhytmus welcher Elemente in einer Liste vertauscht und sortiert//
 export function bubbleSort (args) {
   const list = args.split ("")
+  
+  
   
   return result.join("")
 }
