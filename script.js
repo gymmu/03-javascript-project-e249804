@@ -303,17 +303,18 @@ export function aufgabe16 (args) {
 
 export function aufgabe17 (args) {
   const input = args;
-  const result = input.split(",")
+  const result = input.split(',')
   
 for (let i = 0; i < result.length - 1; i++) { 
   for (let j = 0; j < result.length - 1 - i; j++) {
-    if (result[j] > result [j + 1],result[j]){
-     
+    if (result[j] > result[j + 1]){
+
+      [result[j],result[j+1]]= [result[j+1],result[j]]
     }
   }
 } 
   
-  return result.join("")
+  return result.join(',')
 }
 
 export function aufgabe18(args) {
@@ -339,18 +340,33 @@ export function aufgabe20(args) {
   const input = args
   const result = []
   
-  for(let i =0; i < input.length; i++) {
+  for(let i = 0; i < input.length; i++) {
     const currentElemet = input[i]
+
 // Prüft ob der  Leerschlag nach dem '.' vorhanden ist)
-    if (currentElemeturrentElement ==='.')
-    if (currentElemeturrentelement ===''){
+    if (currentElement ==="."){
+    if (input[i+1] ===" "){
       return true
+    }
     }
   }
   return false
 }
 
 
+export function aufgabe21 (args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
+
+export function aufgabe22 (args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
 
 
 
