@@ -45,7 +45,7 @@ export function aufgabe03(args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement =input[i]
-
+//zähle alle e`s 
 if (currentElement === 'e') {
   count = count + 1
 } 
@@ -115,9 +115,15 @@ export function aufgabe07(args) {
 
   for (let i = 0 ; i < input.length; i++) {
     const currentElement =input[i]
-
+if (currentElement === "u") {
+  if(input[i+1]=== "n") {
+    if(input[i+2]=== "d") {
+    return true
+  }
 }
-  return result.join("")
+}
+  }
+  return false
 }
 
 
@@ -154,7 +160,7 @@ let len = 0
 for (let i = 0; i < input.length; i++) {
 const currentElement = input[i] 
 len = len +1 
-}
+} //testet ob 
 if (len === 6) {
   return true }
   else {return false}
@@ -344,11 +350,8 @@ export function bubbleSort (args){
 const currentElement = list[i]
 const nextElement = list[i + 1]
 if (currentElemen.charCodeAt(0) > nextElement.charCodeAt(0)){
-
-
 const tmp = list[i + 1]
 list [i + 1] = list[i] 
-
 list[i] = tmp
 i= -1
   } 
