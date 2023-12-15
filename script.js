@@ -441,7 +441,12 @@ export function aufgabe25 (args) {
 return result.join("")
 }
 
-
+export function aufgabe26 (args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
 
 
 
