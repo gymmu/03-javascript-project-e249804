@@ -78,7 +78,7 @@ export function aufgabe05(args) {
     const currentElement = input [i]
 if (currentElement===".") {}
 else if (currentElement===" "){}
-
+// Testet ob ein Grossbuchstabe vorkommt
 else if(currentElement === currentElement.toUpperCase())
 {capitalLetters++}
   
@@ -93,7 +93,7 @@ if (capitalLetters > 0) {
   
 }
 
-//Funktion teste ob Grossbuchstaben vorkommen
+//Funktion teste ob Sonderzeichen vorkommen
 export function aufgabe06(args) {
   const input = args
   
@@ -125,7 +125,7 @@ return false
 export function aufgabe07(args) {
   const input = args
   const result = []
-
+// Testet ob das wort "und" vorkommt 
   for (let i = 0 ; i < input.length; i++) {
     const currentElement =input[i]
 if (currentElement === "u") {
@@ -173,7 +173,7 @@ let len = 0
 for (let i = 0; i < input.length; i++) {
 const currentElement = input[i] 
 len = len +1 
-} //testet ob 
+} //testet ob eingabe genau 6 Zeichen lang ist
 if (len === 6) {
   return true }
   else {return false}
@@ -367,7 +367,13 @@ export function aufgabe22 (args) {
   
   return result.join("")
 }
-
+  
+export function aufgabe23 (args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
 
 
 // Der sogennante Bubbelsort ist ein Algorhytmus welcher Elemente in einer Liste vertauscht und sortiert//
