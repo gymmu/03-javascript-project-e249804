@@ -75,10 +75,12 @@ export function aufgabe05(args) {
   let capitalLetters = 0
 
   for (let i = 0 ; i < input.length; i++) {
-    const currentElement = input [i]
+    const currentElement = input[i]
+// Erkennt Grossbuchstaben
 if (currentElement===".") {}
 else if (currentElement===" "){}
-// Testet ob ein Grossbuchstabe vorkommt
+
+// Erkennt ob Grossbuchstaben vorkommen
 else if(currentElement === currentElement.toUpperCase())
 {capitalLetters++}
   
@@ -136,7 +138,7 @@ if (currentElement === "u") {
 }
 }
   }
-  return false
+  return false // Falls kein 'und' vorhanden ist wird Funktion abgebrochen
 }
 
 
@@ -357,6 +359,12 @@ export function aufgabe20(args) {
 export function aufgabe21 (args) {
   const input = args
   const result = []
+
+  let positionOfLastE= -1
+  for(let i = 0; i < input.length;i++) {
+    const currentElement = input[input.length-i-1]
+    result.push(currentElement)
+  }
   
   return result.join("")
 }
@@ -386,12 +394,55 @@ export function aufgabe22 (args) {
   
   
   
-export function aufgabe23 (args) {
+export function aufgabe24 (args) {
+  const input = args
+  const result = []
+
+  if (input.length === 1) return input
+  const firstElem= input[0]
+  const lastElem=input[input.length-1]
+// Erste und letzte zeicheneingabe wird vertauscht
+  result.push(lastElem)
+  for (let i= 1;i < input.length -1; i++) {
+    const currentElement = input [i]
+    result.push(currentElement)// fügt das currentElement hinzu
+  }
+  result.push (firstElem)
+  return result.join("")
+}
+
+export function aufgabe25 (args) {
   const input = args
   const result = []
   
-  return result.join("")
+
+  if (input.length % 2 === 0) {
+    const pos = input.length/2 // /2 weil man dadurch die hälfte bekommt bzw halbiert
+  
+  for (let i = 0; i < input.length;i++) {
+    const currentElement= input[i]
+
+    if (i===pos|| i=== pos -1){}
+    else {
+      result.push(currentElement) 
+    }
+  }
+  
+  }
+  else {
+    const pos= Math.floor(input.length / 2) // halbiert die Zahl
+
+    for (let i = 0; i < input.length; i ++) {
+      const currentElement = input[i]
+      if (i===pos) {}
+      else {result.push(currentElement)}
+    }
+  }
+return result.join("")
 }
+
+
+
 
 
 // Der sogennante Bubbelsort ist ein Algorhytmus welcher Elemente in einer Liste vertauscht und sortiert//
